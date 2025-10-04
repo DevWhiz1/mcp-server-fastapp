@@ -1,4 +1,4 @@
-ge{
+{
   "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
   "name": "Todo App MCP Server",
   "description": "A comprehensive todo application with MongoDB backend, exposed via MCP for LLM integration",
