@@ -71,7 +71,7 @@ This project demonstrates:
 5. **Install MCP server in Gemini CLI**
    ```bash
    gemini mcp add "Todo App MCP Server" "python mcp_server.py" \
-     --env MONGODB_URL="mongodb+srv://rootdb212:C8PA8u4dhXGploow@cluster1.gasiwhs.mongodb.net/" \
+     --env MONGODB_URL="" \
      --env DATABASE_NAME="todo"
    ```
 
@@ -128,6 +128,17 @@ curl -X PATCH "http://localhost:8000/todos/{todo_id}/toggle"
 ```bash
 curl "http://localhost:8000/stats"
 ```
+
+## 📹 Video Demonstration
+
+A complete video demonstration is available in the `video/` folder showing:
+- FastAPI application running and API documentation
+- MCP server startup and functionality
+- Gemini CLI integration and MCP tools usage
+- Database operations and data persistence
+- Natural language todo management
+
+**Video Location**: `video/demo.webm` 
 
 ## 🚀 MCP Server Usage
 
