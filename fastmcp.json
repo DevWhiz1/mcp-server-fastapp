@@ -1,0 +1,78 @@
+ge{
+  "$schema": "https://gofastmcp.com/public/schemas/fastmcp.json/v1.json",
+  "name": "Todo App MCP Server",
+  "description": "A comprehensive todo application with MongoDB backend, exposed via MCP for LLM integration",
+  "version": "1.0.0",
+  "source": {
+    "path": "mcp_server.py",
+    "entrypoint": "mcp"
+  },
+  "environment": {
+    "dependencies": [
+      "fastapi",
+      "uvicorn[standard]",
+      "motor",
+      "pydantic",
+      "python-multipart",
+      "python-dotenv",
+      "pymongo",
+      "fastmcp"
+    ]
+  },
+  "server": {
+    "name": "Todo App MCP Server",
+    "description": "Manage your todos through natural language with full CRUD operations, filtering, and statistics"
+  },
+  "tools": [
+    {
+      "name": "create_todo",
+      "description": "Create a new todo item with title, description, priority, due date, and tags"
+    },
+    {
+      "name": "get_todos",
+      "description": "Get todos with filtering and pagination options"
+    },
+    {
+      "name": "get_todo",
+      "description": "Get a specific todo by its ID"
+    },
+    {
+      "name": "update_todo",
+      "description": "Update an existing todo's properties"
+    },
+    {
+      "name": "delete_todo",
+      "description": "Delete a todo by its ID"
+    },
+    {
+      "name": "toggle_todo",
+      "description": "Toggle the completion status of a todo"
+    },
+    {
+      "name": "get_completed_todos",
+      "description": "Get all completed todos"
+    },
+    {
+      "name": "get_pending_todos",
+      "description": "Get all pending (incomplete) todos"
+    },
+    {
+      "name": "get_todos_by_tag",
+      "description": "Get todos filtered by a specific tag"
+    },
+    {
+      "name": "get_todo_stats",
+      "description": "Get statistics about your todo list including completion rates and priority breakdown"
+    }
+  ],
+  "prompts": [
+    {
+      "name": "create_todo_prompt",
+      "description": "Template for creating new todos with all available options"
+    },
+    {
+      "name": "manage_todos_prompt",
+      "description": "Template for managing existing todos with various operations"
+    }
+  ]
+}

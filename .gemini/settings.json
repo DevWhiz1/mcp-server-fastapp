@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "Todo App MCP Server": {
+      "command": "/home/bajwa/ai-skillbridge-projects/todo-app/myvenv/bin/python mcp_server.py",
+      "args": [],
+      "env": {
+        "MONGODB_URL": "mongodb+srv://localhost:27017/",
+        "DATABASE_NAME": "todo"
+      }
+    }
+  }
+}
